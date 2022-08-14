@@ -1,8 +1,14 @@
+using BulkyBookWeb.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation(); //for hot reaload
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+        builder.Configuration.GetConnectionString("BulkyBookDB")
+    )); 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
