@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BulkyBookWeb.Models
 {
@@ -6,9 +7,13 @@ namespace BulkyBookWeb.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+
+        [DisplayName("Name of Category"),Required(ErrorMessage = "Enter category name!")]
         public string Name { get; set; }
+
+        [DisplayName("Display Order"),Range(1,int.MaxValue,ErrorMessage = "please check the value again!")]
         public int DisplayOrder { get; set; }
+
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     }
 }

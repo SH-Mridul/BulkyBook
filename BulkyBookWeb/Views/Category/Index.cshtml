@@ -3,14 +3,38 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Categories Index</h1>
+<div class="container p-3">
+   <div class="row pt-4">
+      <div class="col-6">
+          <h5 class="text-white">Categories</h5>
+      </div>
 
+      <div class="col-6">
+          <a class="btn btn-primary btn-sm float-end" asp-controller="Category" asp-action="Create"><i class="bi bi-plus-square-fill"></i> &nbsp; Add New</a>
+      </div>
+   </div>
+
+     
+    @if(TempData["success"] != null)
+    {
+        <div class="row pt-4">    
+          <div class="col-12">
+              <div class="alert alert-dismissible alert-success">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                  <strong>@TempData["success"]</strong>
+            </div>
+          </div>
+       </div>
+     }
+</div>
+<br/><br />
 <table class="table table-sm">
   <thead>
     <tr>
       <th scope="col">Name</th>
       <th scope="col">View Order</th>
       <th scope="col">Created At</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +44,10 @@
           <td>@category.Name</td>
           <td>@category.DisplayOrder</td>
           <td>@category.CreatedDateTime.Date</td>
+           <td>
+               <a class="btn btn-success btn-sm" asp-controller="Category" asp-action="Edit" asp-route-id=@category.Id><i class="bi bi-pencil-square"></i></a>
+               <a class="btn btn-danger btn-sm" asp-controller="Category" asp-action="Delete" asp-route-id=@category.Id><i class="bi bi-trash3-fill"></i></a>
+           </td>
         </tr>
     }
   </tbody>
