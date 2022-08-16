@@ -13,20 +13,8 @@
           <a class="btn btn-primary btn-sm float-end" asp-controller="Category" asp-action="Create"><i class="bi bi-plus-square-fill"></i> &nbsp; Add New</a>
       </div>
    </div>
-
-     
-    @if(TempData["success"] != null)
-    {
-        <div class="row pt-4">    
-          <div class="col-12">
-              <div class="alert alert-dismissible alert-success">
-                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                  <strong>@TempData["success"]</strong>
-            </div>
-          </div>
-       </div>
-     }
 </div>
+
 <br/><br />
 <table class="table table-sm">
   <thead>
