@@ -551,3 +551,7 @@ G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Sy
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.dll
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.dll
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.pdb
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.pdb
