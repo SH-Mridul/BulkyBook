@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5wa6pOEjCVLwNYfIUHR8Jh3bp2Bl4d4DpLgReuMbHW2yHBJtbQkElvnW2S1g8l9OxGVF99E3xFGWR2iXPUtmOw==",
+  "dgSpecHash": "JI1toDcC+LEOsYTs83GUzW1dO98YSuo1W4X8+htKDnzmVJYjEif2sE+s1LIO0Zt1053a4u9A7r26vlddUTdTGQ==",
   "success": true,
   "projectFilePath": "G:\\BulkyBook\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,9 @@
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.8\\microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.8\\microsoft.entityframeworkcore.design.6.0.8.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.8\\microsoft.entityframeworkcore.relational.6.0.8.nupkg.sha512",
+    "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\2.0.0-preview1-final\\microsoft.entityframeworkcore.relational.design.2.0.0-preview1-final.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.8\\microsoft.entityframeworkcore.sqlserver.6.0.8.nupkg.sha512",
+    "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver.design\\2.0.0-preview1-final\\microsoft.entityframeworkcore.sqlserver.design.2.0.0-preview1-final.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.8\\microsoft.entityframeworkcore.tools.6.0.8.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
@@ -31,8 +33,10 @@
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.packaging.tools\\1.0.0-preview1-25301-01\\microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\MRIDUL\\.nuget\\packages\\netstandard.library\\2.0.0-preview1-25301-01\\netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\MRIDUL\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

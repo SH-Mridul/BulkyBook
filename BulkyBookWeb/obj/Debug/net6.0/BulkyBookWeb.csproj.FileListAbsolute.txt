@@ -555,3 +555,7 @@ G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.dll
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.dll
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.pdb
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.pdb
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Utility.dll
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Utility.pdb
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll

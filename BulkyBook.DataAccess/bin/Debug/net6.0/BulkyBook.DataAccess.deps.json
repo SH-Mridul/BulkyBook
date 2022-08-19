@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "2.0.0-preview1-final",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8"
         },
         "runtime": {
@@ -135,6 +136,18 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/2.0.0-preview1-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "NETStandard.Library": "2.0.0-preview1-25301-01"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17128"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.SqlServer/6.0.8": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.1.4",
@@ -144,6 +157,19 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "assemblyVersion": "6.0.8.0",
             "fileVersion": "6.0.822.36205"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.Design/2.0.0-preview1-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "2.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "NETStandard.Library": "2.0.0-preview1-25301-01"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17128"
           }
         }
       },
@@ -320,6 +346,7 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {},
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
@@ -343,6 +370,12 @@
             "assemblyVersion": "4.0.2.0",
             "fileVersion": "4.700.19.56404"
           }
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
         }
       },
       "System.Collections.Immutable/6.0.0": {
@@ -561,12 +594,26 @@
       "path": "microsoft.entityframeworkcore.relational/6.0.8",
       "hashPath": "microsoft.entityframeworkcore.relational.6.0.8.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/2.0.0-preview1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3BtBHSgNJaUrj+r5ARBTeRxjMq/og8NdzzdfuyYjwLT6QCX79mCAQ44/MMl5NfwRmPRIerCTUifunQmEZtMQ/w==",
+      "path": "microsoft.entityframeworkcore.relational.design/2.0.0-preview1-final",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.2.0.0-preview1-final.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.SqlServer/6.0.8": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-e7fQvFCiXqQXve6PTWNx4qmvMgi16GEtrR9ON7LwaJU6PizrS55FpL7u5+iocdsyt6jhM2vuXy9TIeS4EHdb/Q==",
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.8",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.8.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.Design/2.0.0-preview1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c8olmWfi+pQyovpd0o5vlYY3eXeKBruv8oL0s7VY8f0QUvlEplyT2QP+coDAU7JBgNOv50TiuwKVMDH87zskDA==",
+      "path": "microsoft.entityframeworkcore.sqlserver.design/2.0.0-preview1-final",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.design.2.0.0-preview1-final.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Tools/6.0.8": {
       "type": "package",
@@ -687,6 +734,13 @@
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
+    "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i0gGYp5lCB3NVx3FglfIXsRZ0kld4e+Wr++svzMOB1g21mos0yOFmohLujdb/HqkjaJfENdH5/CCV5rfhb2RWw==",
+      "path": "microsoft.packaging.tools/1.0.0-preview1-25301-01",
+      "hashPath": "microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512"
+    },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -700,6 +754,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0-preview1-25301-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JgI5IsPMAkYqYeahc+T1G20qqE2qu/P0ZyW2GUPUxxfiT2nQGNDDPq9KHCPUODA3AMSHOp1Vnp6Sxa6jgVYfkg==",
+      "path": "netstandard.library/2.0.0-preview1-25301-01",
+      "hashPath": "netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",
