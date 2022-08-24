@@ -4,15 +4,16 @@ using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace BulkyBookWeb.Controllers
+namespace BulkyBookWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitofWork _unitOfWork;
 
         public CategoryController(IUnitofWork db)
         {
-            _unitOfWork  = db;
+            _unitOfWork = db;
         }
 
         public IActionResult Index()
@@ -33,9 +34,9 @@ namespace BulkyBookWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category category)
         {
-            if(category.Name == category.DisplayOrder.ToString())
+            if (category.Name == category.DisplayOrder.ToString())
             {
-                ModelState.AddModelError("customError","The view order can't exactly match the name!");
+                ModelState.AddModelError("customError", "The view order can't exactly match the name!");
             }
             if (ModelState.IsValid)
             {
@@ -94,7 +95,7 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
 
-              Category category = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            Category category = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
 
             if (category == null)
             {
@@ -105,7 +106,7 @@ namespace BulkyBookWeb.Controllers
         }
 
         //post
-        [HttpPost,ActionName("Delete")]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {

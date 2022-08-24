@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container p-3">
+   <div class="row pt-4">
+      <div class="col-6">
+          <h5 class="text-primary">Product List</h5>
+      </div>
+
+      <div class="col-6">
+          <a class="btn btn-primary btn-sm float-end" asp-controller="Product" asp-action="Upsert"><i class="bi bi-plus-square-fill"></i> &nbsp; Add New</a>
+      </div>
+   </div>
+</div>
+
+<br/><br />
+<table id="producstTable" class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">Author</th>
+     
+    </tr>
+  </thead>
+</table>
+
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}
