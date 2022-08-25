@@ -22,6 +22,8 @@
         <div class="mb-3">
             <label asp-for="Product.Title"></label>
             <input asp-for="Product.Title" class="form-control  form-control-sm"/> 
+            <input hidden asp-for="Product.Id" />
+            <input hidden asp-for="Product.ImagePath"/>
             <span asp-validation-for="Product.Title" class="text-danger"></span>
         </div>
 
@@ -70,6 +72,10 @@
         <div class="mb-3">
             <label asp-for="Product.ImagePath"></label>
             <input type="file" id="uploadBox" name="file" class="form-control form-control-sm"/> 
+             @if (Model.Product.Id != 0)
+            {
+                <img src="@Model.Product.ImagePath" class="img-thumbnail p-2" width="150" height="150">
+            }
         </div>
 
         <div class="mb-3 col-6">
@@ -89,7 +95,15 @@
         </div>
 
         <div class="mx-auto">
-             <button type="submit" onclick="return ValidateInput()" class="btn btn-sm btn-primary ml"  style="width:150px">submit</button>
+            @if (Model.Product.Id == 0 || Model.Product.Id == null)
+            {
+                <button type="submit" onclick="return ValidateInput()" class="btn btn-sm btn-primary ml"  style="width:150px">submit</button>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-sm btn-primary ml"  style="width:150px">Update</button>
+            }
+             
         </div>
        
     </div>
