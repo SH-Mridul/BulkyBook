@@ -22,8 +22,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Product> products = _unitOfWork.Product.GetAll().OrderBy(x => x.Id);
-            return View(products);
+            return View();
         }
 
         public IActionResult Upsert(int? id)
@@ -113,7 +112,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var productList = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");
+            var productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
             return Json(new { data = productList});
         }
 
