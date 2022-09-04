@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Companies";
+}
+
+<div class="container p-3">
+   <div class="row pt-4">
+      <div class="col-6">
+          <h5 class="text-primary">Companies List</h5>
+      </div>
+
+      <div class="col-6">
+          <a class="btn btn-primary btn-sm float-end" asp-controller="Company" asp-action="Upsert"><i class="bi bi-plus-square-fill"></i> &nbsp; Add New</a>
+      </div>
+   </div>
+</div>
+
+<br/><br />
+<table id="companiesTable" class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Street Address</th>
+      <th scope="col">City</th>
+      <th scope="col">State</th>
+      <th scope="col">Postal Code</th>
+       <th scope="col">Action</th>
+    </tr>
+  </thead>
+</table>
+
+@section Scripts{
+    <script src="~/js/company.js"></script>
+}

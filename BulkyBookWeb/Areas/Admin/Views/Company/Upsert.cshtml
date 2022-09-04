@@ -1,0 +1,74 @@
+﻿@model BulkyBook.Models.Company
+
+@{
+    ViewData["Title"] = "create or update company";
+}
+
+<form method="post" asp-action ="Upsert">
+    <div class="border p-3 mt-4 row">
+        <div class="row pb-2">
+             <div class="col-6">
+                  <h5 class="text-primary">@(Model.Id != 0?"Update":"Create") Company</h5>
+              </div>
+
+              <div class="col-6">
+                  <a class="btn btn-info btn-sm float-end mb-3" asp-controller="Company" asp-action="Index">Back to List</a>
+              </div>
+            
+            <hr/>
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="mb-3">
+            <label asp-for="@Model.Name"></label>
+            <input asp-for="@Model.Name" class="form-control  form-control-sm"/> 
+            <input hidden asp-for="@Model.Id" />
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="@Model.StreetAddress"></label>
+            <textarea asp-for="@Model.StreetAddress" rows="3" class="form-control  form-control-sm"> </textarea>
+            <span asp-validation-for="@Model.StreetAddress" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 col-6">
+            <label asp-for="@Model.City"></label>
+            <input asp-for="@Model.City" class="form-control form-control-sm"/> 
+            <span asp-validation-for="@Model.City" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 col-6">
+            <label asp-for="@Model.State"></label>
+            <input asp-for="@Model.State" class="form-control form-control-sm"/> 
+            <span asp-validation-for="@Model.State" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 col-12">
+            <label asp-for="@Model.PostalCode"></label>
+            <input asp-for="@Model.PostalCode" class="form-control form-control-sm"/> 
+            <span asp-validation-for="@Model.PostalCode" class="text-danger"></span>
+        </div>
+
+        
+        <div class="mx-auto">
+            @if (Model.Id == 0 || Model.Id == null)
+            {
+                <button type="submit" class="btn btn-sm btn-primary ml"  style="width:150px">submit</button>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-sm btn-primary ml"  style="width:150px">Update</button>
+            }
+             
+        </div>
+       
+    </div>
+</form>    
+@section Scripts{
+    @{
+    <partial name="_validationScriptsPartial" />
+    }
+}
+
+
