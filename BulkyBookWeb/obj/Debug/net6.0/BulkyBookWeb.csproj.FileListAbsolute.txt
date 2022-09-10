@@ -563,3 +563,4 @@ G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.Identi
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+G:\BulkyBook\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Stripe.net.dll
